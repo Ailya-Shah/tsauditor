@@ -1,8 +1,7 @@
-import pytest
 import pandas as pd
 import numpy as np
 from tsauditor.profiler.missing import audit_missing
-from tsauditor.report.summary import Issue, WARNING
+from tsauditor.report.summary import WARNING
 
 def test_clean_df_no_missing_values(clean_financial_df):
     # Case 1 — Clean df with no missing values -> no issues.

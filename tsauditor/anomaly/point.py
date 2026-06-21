@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from tsauditor.report.summary import Issue, WARNING
 
 def audit_point_anomalies(
@@ -36,7 +35,8 @@ def audit_point_anomalies(
 
         # 3. Z-score Method
         mean, std = series.mean(), series.std()
-        if std == 0: continue
+        if std == 0: 
+            continue
         z_scores = (series - mean) / std
         z_mask = abs(z_scores) > z_thresh
         

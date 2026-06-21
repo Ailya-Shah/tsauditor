@@ -5,11 +5,11 @@ compares model performance with and without same-day leakage features
 run: python compare_leakage.py
 """
 
-import sys, os
+import sys
+import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 import pandas as pd
-import numpy as np
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.metrics import accuracy_score, roc_auc_score
 

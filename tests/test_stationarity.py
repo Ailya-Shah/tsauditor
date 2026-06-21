@@ -2,7 +2,6 @@ import pytest
 import pandas as pd
 import numpy as np
 from tsauditor.profiler.stationarity import audit_stationarity
-from tsauditor.report.summary import INFO
 
 @pytest.fixture
 def base_date_index():

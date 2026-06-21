@@ -2,7 +2,6 @@ import pytest
 import pandas as pd
 import numpy as np
 from tsauditor.anomaly.point import audit_point_anomalies
-from tsauditor.report.summary import WARNING
 
 @pytest.fixture
 def base_date_index():

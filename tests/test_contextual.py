@@ -1,8 +1,7 @@
 import pytest
 import pandas as pd
-import numpy as np
 from tsauditor.anomaly.contextual import audit_contextual_anomalies
-from tsauditor.report.summary import Issue, WARNING
+from tsauditor.report.summary import WARNING
 
 def test_clean_df_no_anomalies(clean_financial_df):
     """Case 1 — Clean df -> no issues on continuous market data columns."""

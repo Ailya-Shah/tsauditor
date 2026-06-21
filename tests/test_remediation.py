@@ -1,4 +1,3 @@
-import pytest
 
 from tsauditor.report.summary import Issue, GuardReport, CRITICAL, WARNING, INFO
 

@@ -11,7 +11,7 @@ import pandas as pd
 import pytest
 
 import tsauditor as tsa
-from tsauditor.report.summary import GuardReport, Issue, CRITICAL, WARNING, INFO
+from tsauditor.report.summary import GuardReport, Issue, CRITICAL, WARNING
 from tsauditor.utils.validation import validate_dataframe, infer_frequency
 
 

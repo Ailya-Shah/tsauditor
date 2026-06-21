@@ -1,8 +1,7 @@
 import pytest
 import pandas as pd
-import numpy as np
 from tsauditor.profiler.frequency import audit_frequency
-from tsauditor.report.summary import Issue, CRITICAL, WARNING
+from tsauditor.report.summary import CRITICAL, WARNING
 
 def test_clean_financial_df_no_issues(clean_financial_df):
     # Case 1 — Clean daily financial df -> no issues returned.

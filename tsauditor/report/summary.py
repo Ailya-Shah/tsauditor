@@ -174,7 +174,7 @@ class GuardReport:
 
         # Metadata block
         meta = self.metadata
-        console.print(f"\n[bold]Dataset[/bold]")
+        console.print("\n[bold]Dataset[/bold]")
         console.print(f"  Rows       : {meta.get('rows', 'N/A')}")
         console.print(f"  Columns    : {meta.get('columns', 'N/A')}")
         console.print(f"  Time range : {meta.get('time_start', '?')} → {meta.get('time_end', '?')}")
